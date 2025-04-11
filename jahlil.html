@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jahlil's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav a {
+        transition: color 0.3s, transform 0.3s;
+      }
+
+      nav a:hover {
+        color: #fbbf24;
+        transform: scale(1.05);
+      }
+
+      section {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 9999px;
+        margin: 0 auto 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <nav class="bg-gray-800 text-white p-4 flex justify-center space-x-6">
+      <a href="#home" class="hover:underline">Home</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#meal1" class="hover:underline">Spaghetti Carbonara</a>
+      <a href="#meal2" class="hover:underline">Chicken Biryani</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center flex-col text-center p-6 bg-yellow-100">
+      <h1 class="text-5xl font-bold mb-4">Welcome to My Two Meals</h1>
+      <p class="text-xl">Explore the stories behind my favorite dishes.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="p-12 text-center bg-gray-50">
+      <img src="jahfar" alt="Profile Picture" class="profile-pic" />
+      <h2 class="text-4xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        I’m passionate about cooking and love creating simple yet unforgettable meals.
+        These two dishes represent what I enjoy making the most—heartfelt, flavorful, and rooted in tradition.
+      </p>
+    </section>
+
+    <!-- Meal 1 Section -->
+    <section id="meal1" class="p-12 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <img src="WhatsApp Image 2025-04-11 at 03.48.24" alt="Spaghetti Carbonara" class="rounded-xl mb-6 w-full" />
+        <h2 class="text-3xl font-bold mb-2">Spaghetti Carbonara</h2>
+        <p class="text-gray-700 mb-4">
+          A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper. It's creamy, savory, and simple—perfect for any occasion.
+        </p>
+        <ul class="list-disc pl-6 text-gray-600">
+          <li>Spaghetti</li>
+          <li>Eggs</li>
+          <li>Pancetta</li>
+          <li>Parmesan Cheese</li>
+          <li>Black Pepper</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Meal 2 Section -->
+    <section id="meal2" class="p-12 bg-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <img src="WhatsApp Image 2025-04-11 at 03.50.11" alt="Chicken Biryani" class="rounded-xl mb-6 w-full" />
+        <h2 class="text-3xl font-bold mb-2">Chicken Biryani</h2>
+        <p class="text-gray-700 mb-4">
+          A flavorful and aromatic South Asian dish made by layering marinated chicken with fragrant basmati rice, spices, and herbs.
+        </p>
+        <ul class="list-disc pl-6 text-gray-600">
+          <li>Basmati Rice</li>
+          <li>Chicken</li>
+          <li>Yogurt & Spices</li>
+          <li>Onions</li>
+          <li>Fresh Coriander & Mint</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-12 bg-white">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-600 mb-6">Have questions or want to share your thoughts? Reach out below!</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Jahlil" class="w-full p-3 border border-gray-300 rounded" />
+          <input type="email" placeholder="Jahfar Khalif " class="w-full p-3 border border-gray-300 rounded" />
+          <textarea placeholder="cooking with kya" rows="4" class="w-full p-3 border border-gray-300 rounded"></textarea>
+          <button type="submit" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-700 transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+      <p>&copy; 2025 My Two Meals</p>
+    </footer>
+  </body>
+</html>
